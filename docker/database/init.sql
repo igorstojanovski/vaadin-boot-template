@@ -1,0 +1,3 @@
+CREATE USER igorski;
+CREATE DATABASE sampledb;
+GRANT ALL PRIVILEGES ON DATABASE sampledb TO igorski;
