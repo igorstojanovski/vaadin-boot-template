@@ -3,7 +3,7 @@ package co.igorski.centralcommittee.ui.user;
 import co.igorski.centralcommittee.model.User;
 import co.igorski.centralcommittee.services.UserService;
 import co.igorski.centralcommittee.ui.user.dialogs.NewUserDialog;
-import co.igorski.centralcommittee.ui.views.layouts.BreadCrumbedView;
+import co.igorski.centralcommittee.ui.views.MainView;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dialog.Dialog;
 import com.vaadin.flow.component.grid.Grid;
@@ -18,7 +18,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.vaadin.artur.spring.dataprovider.PageableDataProvider;
 
-@Route(value = "Users", layout = BreadCrumbedView.class)
+@Route(value = "Users", layout = MainView.class)
 public class Users extends VerticalLayout implements AfterNavigationObserver {
 
     private final Grid<User> usersGrid;
